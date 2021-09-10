@@ -1,0 +1,377 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #bd5cf3;
+  overflow: hidden;
+}
+
+.mainTittle {
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  width: 80%;
+  color: #ffc758;
+  -webkit-text-stroke-color: #9c02f1;
+  -webkit-text-stroke-width: 1px;
+}
+
+/* SCREEN PLAY */
+
+.containerPlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#containerRobot {
+  float: right;
+  width: 100px;
+}
+
+#tittle span {
+  position: relative;
+  left: 80px;
+  top: 30px;
+}
+
+#clickHere {
+  font-size: 25px;
+  font-weight: normal;
+  color: #fff;
+  margin: 5px;
+}
+
+#clickButton {
+  background-color: #55f855;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#play {
+  color: #9c02f1;
+  font-size: 40px;
+  transform: rotate(8.45deg);
+}
+/* SCREEN PLAY */
+
+/* SCREEN CHOOSE */
+.containerChoose {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rock,
+#paper,
+#scissors {
+  background-color: #55f855;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#rock {
+  position: relative;
+  left: -100px;
+}
+#paper {
+  position: relative;
+  left: 100px;
+  top: -150px;
+}
+#scissors {
+  position: relative;
+  top: -150px;
+}
+
+.weapon {
+  color: #9c02f1;
+  font-size: 40px;
+}
+
+#circle {
+  position: relative;
+  top: -430px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 10px solid #9c02f1;
+  background: none;
+  z-index: -1;
+}
+
+#arrow1 {
+  color: #ffc758;
+  position: relative;
+  top: -668px;
+}
+#arrow2 {
+  color: #ffc758;
+  position: relative;
+  top: -562px;
+  left: 91px;
+  transform: rotate(124deg);
+}
+#arrow3 {
+  color: #ffc758;
+  position: relative;
+  top: -614px;
+  left: -94px;
+  transform: rotate(244deg);
+}
+/* SCREEN CHOOSE */
+
+/* SCREEN LOADING */
+
+.containerLoading {
+  display: none;
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.combatText {
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  color: #ffc758;
+  -webkit-text-stroke-color: #9c02f1;
+  -webkit-text-stroke-width: 1px;
+}
+
+.combatCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #55f855;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+.skull1 {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+.bomb1 {
+  position: absolute;
+  left: 10%;
+  top: 60%;
+}
+.exclamation1 {
+  position: absolute;
+  left: 40%;
+  top: 62%;
+}
+.hashtag1 {
+  position: absolute;
+  left: 75%;
+  top: 30%;
+}
+
+.skull2 {
+  position: absolute;
+  left: 80%;
+  top: 15%;
+}
+.bomb2 {
+  position: absolute;
+  left: 69%;
+  top: 80%;
+}
+.exclamation2 {
+  position: absolute;
+  left: 15%;
+  top: 10%;
+}
+.hashtag2 {
+  position: absolute;
+  left: 30%;
+  top: 70%;
+}
+
+.skull3 {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+}
+.bomb3 {
+  position: absolute;
+  left: 40%;
+  top: 15%;
+}
+.exclamation3 {
+  position: absolute;
+  left: 80%;
+  top: 60%;
+}
+.hashtag3 {
+  position: absolute;
+  left: 10%;
+  top: 32%;
+}
+
+.skull4 {
+  position: absolute;
+  left: 65%;
+  top: 67%;
+}
+.bomb4 {
+  position: absolute;
+  left: 48%;
+  top: 63%;
+}
+.exclamation4 {
+  position: absolute;
+  left: 45%;
+  top: 32%;
+}
+.hashtag4 {
+  position: absolute;
+  left: 55%;
+  top: 22%;
+}
+
+.FadeInAndOut1 {
+  -webkit-animation: fadeinout 1.2s linear forwards;
+  animation: fadeinout 1.2s linear forwards;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+.FadeInAndOut2 {
+  -webkit-animation: fadeinout 1s linear forwards;
+  animation: fadeinout 1s linear forwards;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+.FadeInAndOut3 {
+  -webkit-animation: fadeinout 1.5s linear forwards;
+  animation: fadeinout 1.5s linear forwards;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+.FadeInAndOut4 {
+  -webkit-animation: fadeinout 1.8s linear forwards;
+  animation: fadeinout 1.8s linear forwards;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinout {
+  50% {
+    opacity: 1;
+  }
+}
+
+/* SCREEN LOADING */
+
+/* WON */
+
+.containerWon {
+  display: none;
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tittleResult {
+  font-size: 35px;
+  color: #ffc758;
+  -webkit-text-stroke-color: #9c02f1;
+  -webkit-text-stroke-width: 1px;
+  transform: rotate(356deg);
+  margin-bottom: 0px;
+}
+
+.circleResult {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #55f855;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.textResult {
+  color: #9c02f1;
+  font-size: 40px;
+  text-align: center;
+}
+
+.playAgain {
+  width: 90px;
+  height: 80px;
+  background: #9c02f1;
+  display: flex;
+  align-items: center;
+  margin: 50px 0 0 40%;
+}
+
+.playAgain p {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  color: #ffc758;
+}
+
+/* WON */
+
+/* LOST */
+.containerLost {
+  display: none;
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleResultLost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc758;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+/* LOST */
+
+/* DRAW */
+
+.containerDraw {
+  display: none;
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DRAW */
